@@ -48,7 +48,7 @@ st.markdown("""
 # --- LOAD MODEL ---
 @st.cache_resource
 def load_model():
-    model_path = 'model/student_depression_model.pkl'
+    model_path = 'model/student_depression_gb_model.pkl'
     if os.path.exists(model_path):
         return joblib.load(model_path)
     return None
